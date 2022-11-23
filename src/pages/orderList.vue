@@ -1,9 +1,8 @@
 <template>
-  <div></div>
+  <div>OrderList</div>
 </template>
-
 <script>
-export default {}
+export default {
+  name: 'order-list'
+}
 </script>
-
-<style></style>

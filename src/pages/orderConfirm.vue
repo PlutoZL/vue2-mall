@@ -1,9 +1,8 @@
 <template>
-  <div></div>
+  <div>OrderFirm</div>
 </template>
-
 <script>
-export default {}
+export default {
+  name: 'order-confirm'
+}
 </script>
-
-<style></style>

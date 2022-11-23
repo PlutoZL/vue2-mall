@@ -1,9 +1,13 @@
 <template>
-  <div></div>
+  <div>
+    detail
+    <order-header></order-header>
+  </div>
 </template>
-
 <script>
-export default {}
+import OrderHeader from '@/components/OrderHeader.vue'
+export default {
+  name: 'detail',
+  components: { OrderHeader }
+}
 </script>
-
-<style></style>
