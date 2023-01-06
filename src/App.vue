@@ -5,17 +5,28 @@
 </template>
 
 <script>
-import storage from './storage/index'
+// import storage from './storage/index'
 export default {
   name: 'App',
   components: {},
   data() {
-    return {}
+    return {
+      res: {}
+    }
   },
   mounted() {
-    // storage.setItem('a', 1);
-    // storage.setItem('user', { a: 1 })
-    storage.clear('a')
+    // 本地加载请求静态json文件的形式
+    // this.axios.get('/mock/user/login.json').then((res) => {
+    //   this.res = res
+    // })
+    // 通过easy-mock平台实现mock
+    // this.axios.get('/mock/user/login.json').then((res) => {
+    //   this.res = res
+    // })
+    //本地集成mockjs实现数据mock
+    this.axios.get('/user/login').then((res) => {
+      this.res = res
+    })
   }
 }
 </script>
